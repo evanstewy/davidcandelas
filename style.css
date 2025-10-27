@@ -18,7 +18,6 @@ body{
     min-height: 100vh;
     min-width: 100vw;
     flex-direction: column;
-
 }
 
 .container {
@@ -71,7 +70,10 @@ footer{
 }
 
 .link{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 20px;
     padding: 17px;
     font-size: 1rem;
@@ -82,16 +84,27 @@ footer{
     text-decoration: none;  
     color: var(--color);  
     word-wrap: break-word;
-
+    transition: all 0.2s ease;
 }
 
+.link:hover {
+    transform: translateY(-2px);
+    background-color: rgba(35, 35, 51, 0.05);
+}
 
+.link i {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
 
 @media (prefers-color-scheme: dark) {
-
     :root {        
         --background: #202124;
         --color: white;
     }
-  }
+    
+    .link:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
   
