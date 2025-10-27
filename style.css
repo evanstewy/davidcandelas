@@ -101,6 +101,118 @@ footer{
     justify-content: center;
 }
 
+/* Bio Page Styles */
+.bio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.bio-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bio-header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--color);
+}
+
+.bio-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color);
+}
+
+.bio-header .subtitle {
+    font-size: 1.1rem;
+    color: var(--color);
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.bio-content {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.bio-content p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bio-content strong {
+    font-weight: 700;
+}
+
+.highlights {
+    background-color: rgba(35, 35, 51, 0.05);
+    border-left: 3px solid var(--color);
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.highlights h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.highlights li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 12px 24px;
+    border: dashed var(--color) 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.back-link:hover {
+    transform: translateY(-2px);
+    background-color: rgba(35, 35, 51, 0.05);
+}
+
+@media (max-width: 768px) {
+    .bio-header h1 {
+        font-size: 2rem;
+    }
+    
+    .bio-header img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .bio-content {
+        font-size: 1rem;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     :root {        
         --background: #202124;
@@ -108,6 +220,14 @@ footer{
     }
     
     .link:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    .highlights {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    .back-link:hover {
         background-color: rgba(255, 255, 255, 0.05);
     }
 }
