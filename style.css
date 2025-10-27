@@ -73,9 +73,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 14px;
     margin-bottom: 20px;
-    padding: 17px;
+    padding: 18px 24px;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
@@ -93,8 +93,12 @@ footer{
 }
 
 .link i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     flex-shrink: 0;
+    width: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -107,4 +111,3 @@ footer{
         background-color: rgba(255, 255, 255, 0.05);
     }
 }
-  
