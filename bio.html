@@ -29,59 +29,44 @@
     <link rel="canonical" href="https://davidcandelas.com/bio">
     
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="David Candelas" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+    <meta name="apple-mobile-web-app-title" content="David Candelas">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
+      "@type": "MusicGroup",
       "@id": "https://davidcandelas.com/#artist",
       "name": "David Candelas",
-      "description": "Mexican-American alternative rock artist, singer, songwriter, and multi-instrumentalist based in Las Vegas, Nevada",
-      "genre": ["Alternative Rock", "Indie Rock", "Pop Rock"],
+      "description": "Mexican-American alternative rock artist, singer, songwriter, and multi-instrumentalist based in Las Vegas, Nevada.",
       "url": "https://davidcandelas.com/",
       "image": "https://davidcandelas.com/David_Candelas_Logo.png",
-      "birthPlace": "United States",
-      "homeLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Las Vegas",
-          "addressRegion": "NV",
-          "addressCountry": "US"
-        }
-      },
-      "knowsAbout": ["Songwriting", "Music Production", "Mixing", "Recording", "Multi-instrumental Performance"],
+      "genre": ["Alternative Rock", "Indie Rock", "Pop Rock"],
       "memberOf": [
-        {
-          "@type": "MusicGroup",
-          "name": "SECOS"
-        },
-        {
-          "@type": "MusicGroup",
-          "name": "Blood Roosters"
-        }
+        { "@type": "MusicGroup", "name": "SECOS" },
+        { "@type": "MusicGroup", "name": "Blood Roosters" }
       ],
-      "performerIn": [
-        {
-          "@type": "Event",
-          "name": "Life Is Beautiful Festival"
-        },
-        {
-          "@type": "Event",
-          "name": "Jam in the Van"
-        }
+      "knowsAbout": [
+        "Songwriting",
+        "Music Production",
+        "Mixing",
+        "Recording",
+        "Multi-instrumental Performance"
+      ],
+      "event": [
+        { "@type": "Event", "name": "Life Is Beautiful Festival" },
+        { "@type": "Event", "name": "Jam in the Van" }
       ],
       "founder": {
-        "@type": "Event",
+        "@type": "MusicEvent",
         "name": "Pineapple Fest",
-        "description": "Las Vegas-based event celebrating live bands and independent music"
+        "description": "Las Vegas-based event celebrating live bands and independent music."
       },
       "sameAs": [
         "https://www.instagram.com/davidcandelasbr/",
