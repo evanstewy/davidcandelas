@@ -37,6 +37,14 @@ body{
     margin: 0;
 }
 
+.subtitle{
+    max-width: 450px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
 footer{
     text-align: center;
     font-size: 0.75rem;
