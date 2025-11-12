@@ -47,22 +47,44 @@
     
     <!-- JSON-LD Schema Markup - Simplified for Homepage -->
     <script type="application/ld+json">
+    [
     {
-      "@context": "https://schema.org",
-      "@type": "MusicGroup",
-      "name": "David Candelas",
-      "description": "Mexican-American alternative rock artist based in Las Vegas, Nevada",
-      "url": "https://davidcandelas.com/",
-      "image": "https://davidcandelas.com/David Candelas Photo.jpg",
-      "genre": ["Alternative Rock", "Alt Rock", "Indie Rock"],
-      "sameAs": [
+        /* * Entity 1: The Person (The Solo Artist)
+        * This establishes the primary Knowledge Panel entity.
+        */
+        "@context": "https://schema.org",
+        "@type": "Person", 
+        "name": "David Candelas",
+        "alternateName": ["David Candelas BR"],
+        "description": "Mexican-American alternative rock artist, singer, songwriter, and multi-instrumentalist based in Las Vegas, Nevada.",
+        "url": "https://davidcandelas.com/",
+        "image": "https://davidcandelas.com/David Candelas Photo.jpg",
+        "jobTitle": "Singer, Songwriter, Multi-instrumentalist, Producer",
+        "genre": ["Alternative Rock", "Indie Rock", "Pop Rock", "Alt Chicano"],
+        "sameAs": [
         "https://www.instagram.com/davidcandelasbr/",
         "https://www.facebook.com/davidcandelasbr/",
-        "https://open.spotify.com/artist/1epbHgwdEoHxfosHJAFfng?si=5NJu-22bRH2tE-YD4-k6sw",
+        "https://open.spotify.com/artist/1epbHgwdEoHxfosHJAFfng",
         "https://music.apple.com/us/artist/david-candelas/1315368598",
-        "https://www.youtube.com/@davidcandelasbr"
-      ]
+        "https://www.youtube.com/@davidcandelasbr",
+        "https://davidcandelas.com/bio" 
+        ]
+    },
+    {
+        /* * Entity 2: The Website/Organization 
+        * This clarifies that the website is the official representation of the entity.
+        */
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "David Candelas Official Website",
+        "url": "https://davidcandelas.com/",
+        "logo": "https://davidcandelas.com/favicon-48.png",
+        "sameAs": [
+        "https://www.instagram.com/davidcandelasbr/",
+        "https://www.facebook.com/davidcandelasbr/"
+        ]
     }
+    ]
     </script>
 
 </head>
