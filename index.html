@@ -49,11 +49,9 @@
     <script type="application/ld+json">
     [
     {
-        /* * Entity 1: The Person (The Solo Artist)
-        * This establishes the primary Knowledge Panel entity.
-        */
         "@context": "https://schema.org",
-        "@type": "Person", 
+        "@type": ["Person", "MusicGroup"],
+        "@id": "https://davidcandelas.com/#person",
         "name": "David Candelas",
         "alternateName": ["David Candelas BR"],
         "description": "Mexican-American alternative rock artist, singer, songwriter, and multi-instrumentalist based in Las Vegas, Nevada.",
@@ -61,6 +59,7 @@
         "image": "https://davidcandelas.com/David Candelas Photo.jpg",
         "jobTitle": "Singer, Songwriter, Multi-instrumentalist, Producer",
         "genre": ["Alternative Rock", "Indie Rock", "Pop Rock", "Alt Chicano"],
+        "mainEntityOfPage": "https://davidcandelas.com/",
         "sameAs": [
         "https://www.instagram.com/davidcandelasbr/",
         "https://www.facebook.com/davidcandelasbr/",
@@ -68,20 +67,6 @@
         "https://music.apple.com/us/artist/david-candelas/1315368598",
         "https://www.youtube.com/@davidcandelasbr",
         "https://davidcandelas.com/bio" 
-        ]
-    },
-    {
-        /* * Entity 2: The Website/Organization 
-        * This clarifies that the website is the official representation of the entity.
-        */
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "David Candelas Official Website",
-        "url": "https://davidcandelas.com/",
-        "logo": "https://davidcandelas.com/favicon-48.png",
-        "sameAs": [
-        "https://www.instagram.com/davidcandelasbr/",
-        "https://www.facebook.com/davidcandelasbr/"
         ]
     }
     ]
